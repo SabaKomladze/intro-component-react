@@ -15,6 +15,22 @@
   color: #ffffff;
   text-align: center;
 }
+.invalid {
+  border: 3px solid #ff7979;
+  border-radius: 5px;
+  height: 56px;
+  background-image: url(../public/assets/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+.error {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: right;
+  color: #ff7979;
+  font-style: italic;
+}
 .learnToCode {
   font-weight: 700;
   font-size: 28px;
@@ -55,6 +71,7 @@ input {
   border: 1px solid #dedede;
   border-radius: 5px;
   height: 56px;
+  position: relative;
 }
 button {
   background: #38cc8b;
@@ -67,6 +84,7 @@ button {
   height: 56px;
   cursor: pointer;
   color: #ffffff;
+  border: none;
 }
 button:hover {
   background: #77e2b3;
@@ -90,4 +108,42 @@ button:hover {
   mix-blend-mode: normal;
   opacity: 0.75;
   padding-left: 20px;
+}
+@media (min-width: 768px) {
+  .App {
+    background-image: url(../public/assets/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-color: #ff7979;
+    padding: 88px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+  }
+  .leftSide {
+    width: 525px;
+  }
+  .learnToCode {
+    text-align: left;
+    font-size: 50px;
+    line-height: 55px;
+  }
+  .seeHow {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+  }
+  .form {
+    width: 540px;
+    margin: 0;
+  }
+  form {
+    padding: 40px;
+  }
+  .terms {
+    line-height: 26px;
+  }
 }
