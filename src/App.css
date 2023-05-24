@@ -1,38 +1,93 @@
 .App {
+  background-image: url(../public/assets/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-color: #ff7979;
+  padding: 88px 24px;
+}
+.learnToCode,
+.seeHow,
+.purple,
+.submit,
+.terms {
+  color: #ffffff;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.learnToCode {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.seeHow {
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
+  margin-top: 64px;
+}
+.purple {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  background-color: #5e54a4;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+  padding: 18px 0;
+}
+.days {
+  font-weight: 700;
+}
+form {
+  margin-top: 24px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 16px;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+  padding: 24px;
 }
-
-.App-link {
-  color: #61dafb;
+input {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  height: 56px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  background: #38cc8b;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  height: 56px;
+  cursor: pointer;
+  color: #ffffff;
+}
+button:hover {
+  background: #77e2b3;
+}
+.terms {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 21px;
+  color: #bab7d4;
+}
+.service {
+  color: #ff7979;
+  font-weight: 700;
+}
+::placeholder {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.25px;
+  color: #3d3b48;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  padding-left: 20px;
 }
